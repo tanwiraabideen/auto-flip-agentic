@@ -1,0 +1,10 @@
+{
+  "name": "auto-flip-scraper",
+  "type": "module",
+  "scripts": {
+    "scrape": "node run.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

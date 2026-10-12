@@ -1,0 +1,6 @@
+node_modules
+.env
+.DS_Store
+
+# screenshots the scraper saves when a search page fails
+debug-*.png

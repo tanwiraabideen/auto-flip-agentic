@@ -1,0 +1,109 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Cars {
+  id                  Int              @id @default(autoincrement())
+  url                 String?
+  make                String
+  model               String
+  description         String
+  imageUrls           String[]         @default([])
+  price               Int
+  timePosted          DateTime?
+  location            String
+  mileage             Int?
+  year                Int?
+  timeAddedToDataBase DateTime         @default(now())
+  analysisStatus      AnalysisStatus   @default(PENDING)
+  triageCategory      TriageCategory? // Whether genuine listing. From llm pre-check
+  triageConfidence    Float?
+  triageReason        String?
+  FilterListing       FilterListing[]
+  ListingAnalysis     ListingAnalysis?
+}
+
+enum AnalysisStatus {
+  PENDING
+  REJECTED_RULES
+  REJECTED_TRIAGE
+  ANALYSING
+  DONE
+  FAILED
+}
+
+enum TriageCategory {
+  GENUINE_SALE
+  SPARES_OR_REPAIRS
+  BREAKING_FOR_PARTS
+  WANTED_AD
+  WRITE_OFF
+  SCAM_SUSPECTED
+  NOT_A_CAR
+}
+
+enum Recommendation {
+  BUY
+  MAYBE
+  AVOID
+}
+
+model ListingAnalysis {
+  id                 Int            @id @default(autoincrement())
+  listingId          Int            @unique
+  score              Int // out of 10
+  recommendation     Recommendation
+  summary            String
+  registration       String?
+  conditionRating    Int?
+  visibleDamage      String?
+  motExpiry          DateTime?
+  mileageDiscrepancy Boolean        @default(false)
+  advisories         Json?
+  createdAt          DateTime       @default(now())
+  Cars               Cars           @relation(fields: [listingId], references: [id], onDelete: Cascade)
+}
+
+model Filters {
+  id            Int             @id @default(autoincrement())
+  name          String
+  make          String?
+  model         String?
+  minPrice      Int?
+  maxPrice      Int?
+  userId        String
+  maxYear       Int?
+  minYear       Int?
+  minMileage    Int?
+  maxMileage    Int?
+  FilterListing FilterListing[]
+  user          user            @relation(fields: [userId], references: [id])
+}
+
+model user {
+  id        String    @id @default(cuid())
+  clerkId   String?   @unique // REMOVE OPTIONAL
+  name      String?
+  email     String    @unique
+  image     String?
+  createdAt DateTime  @default(now())
+  Filters   Filters[]
+}
+
+model FilterListing {
+  filterId   Int
+  listingId  Int
+  matchedAt  DateTime  @default(now())
+  notifiedAt DateTime?
+  Filters    Filters   @relation(fields: [filterId], references: [id])
+  Cars       Cars      @relation(fields: [listingId], references: [id])
+
+  @@id([filterId, listingId])
+}
