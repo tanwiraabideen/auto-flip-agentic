@@ -1,28 +1,12 @@
 // stage one of the analysis pipeline. A cheap OpenAI model reads the ad text returns the TRIAGE_CATEGORY
 import { ChatOpenAI } from '@langchain/openai'
-import { z } from 'zod'
+import { TriageResult } from './schemas.mjs'
+import { config } from './config.mjs'
 
-// keep in sync with the TriageCategory enum in prisma/schema.prisma
-export const TRIAGE_CATEGORIES = [
-    'GENUINE_SALE',
-    'SPARES_OR_REPAIRS',
-    'BREAKING_FOR_PARTS',
-    'WANTED_AD',
-    'WRITE_OFF',
-    'SCAM_SUSPECTED',
-    'NOT_A_CAR',
-]
 export const PASS_CATEGORY = 'GENUINE_SALE'
-export const MIN_CONFIDENCE = 0.7
 
 // long dealer descriptions are mostly spec lists, the start says enough and keeps the cost down
-const MAX_DESCRIPTION_LENGTH = 3000
-
-const TriageResult = z.object({
-    category: z.enum(TRIAGE_CATEGORIES).describe('The category that best describes the advert'),
-    confidence: z.number().min(0).max(1).describe('How sure you are of the category, from 0 to 1'),
-    reason: z.string().describe('One short sentence explaining why you chose the category'),
-})
+const { model, minConfidence, maxDescriptionLength } = config.triage
 
 const SYSTEM_PROMPT = `You triage UK used car adverts from Gumtree for someone who buys cars to resell.
 Read the advert and pick exactly one category:
@@ -76,7 +60,7 @@ Description: "Good car."
 let structuredModel = null
 function getModel() {
     structuredModel ??= new ChatOpenAI({
-        model: process.env.OPENAI_TRIAGE_MODEL ?? 'gpt-5-nano',
+        model,
     }).withStructuredOutput(TriageResult, { name: 'triage_result' })
     return structuredModel
 }
@@ -90,7 +74,7 @@ export async function triageListing({ description, price, makeModel, mileage }) 
         `Make and model: ${makeModel || 'unknown'}`,
         `Price: ${formatPrice(price)}`,
         `Mileage: ${formatMileage(mileage)}`,
-        `Description: """${(description || 'none').slice(0, MAX_DESCRIPTION_LENGTH)}"""`,
+        `Description: """${(description || 'none').slice(0, maxDescriptionLength)}"""`,
     ].join('\n')
 
     return getModel().invoke([
@@ -99,4 +83,4 @@ export async function triageListing({ description, price, makeModel, mileage }) 
     ])
 }
 
-export const passesTriage = (result) => result.category === PASS_CATEGORY && result.confidence > MIN_CONFIDENCE
+export const passesTriage = (result) => result.category === PASS_CATEGORY && result.confidence > minConfidence

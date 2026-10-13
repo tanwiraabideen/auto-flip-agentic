@@ -55,20 +55,27 @@ enum Recommendation {
   AVOID
 }
 
+enum AnalysisConfidence {
+  LOW
+  MEDIUM
+  HIGH
+}
+
 model ListingAnalysis {
-  id                 Int            @id @default(autoincrement())
-  listingId          Int            @unique
+  id                 Int                @id @default(autoincrement())
+  listingId          Int                @unique
   score              Int // out of 10
   recommendation     Recommendation
   summary            String
+  redFlags           String[]           @default([])
+  positives          String[]           @default([])
+  confidence         AnalysisConfidence
   registration       String?
-  conditionRating    Int?
-  visibleDamage      String?
   motExpiry          DateTime?
-  mileageDiscrepancy Boolean        @default(false)
+  mileageDiscrepancy Boolean            @default(false)
   advisories         Json?
-  createdAt          DateTime       @default(now())
-  Cars               Cars           @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  createdAt          DateTime           @default(now())
+  Cars               Cars               @relation(fields: [listingId], references: [id], onDelete: Cascade)
 }
 
 model Filters {

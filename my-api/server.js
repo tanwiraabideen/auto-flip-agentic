@@ -1,4 +1,3 @@
-// We are using a seperate server for API as we don't want to use Expo API as it's newer
 import { PrismaClient } from './generated/prisma/index.js';
 import { withAccelerate } from '@prisma/extension-accelerate';
 import express from 'express';
@@ -15,7 +14,7 @@ const prisma = new PrismaClient().$extends(withAccelerate());
 app.use(cors());
 app.use(express.json());
 
-// Get matched cars for a user
+// get matched cars for a user
 
 app.get('/cars/user/:userId', async (req, res) => {
     const filters = await prisma.filters.findMany({
@@ -23,7 +22,9 @@ app.get('/cars/user/:userId', async (req, res) => {
         include: {
             FilterListing: {
                 include: {
-                    Cars: true
+                    Cars: {
+                        include: { ListingAnalysis: true }
+                    }
                 }
             }
         }
@@ -37,25 +38,45 @@ app.get('/cars/user/:userId', async (req, res) => {
         })
     })
 
-    res.json(Array.from(carsMap.values()))
+    // best deals first
+    const cars = Array.from(carsMap.values())
+        .sort((a, b) => (b.ListingAnalysis?.score ?? -1) - (a.ListingAnalysis?.score ?? -1))
+    res.json(cars)
 })
 
 
-// Get all listings
+// get all listings
 app.get('/listings', async (req, res) => {
     const listings = await prisma.cars.findMany();
     res.json(listings);
 });
 
-// Get a listing
+// get single listing with analysis
 app.get('/listings/:id', async (req, res) => {
     const car = await prisma.cars.findUnique({
         where: { id: parseInt(req.params.id) },
+        include: { ListingAnalysis: true },
     });
     res.json(car);
 });
 
-// Get a filter
+// get a listing's analysis
+app.get('/listings/:id/analysis', async (req, res) => {
+    const listingId = parseInt(req.params.id)
+    if (Number.isNaN(listingId)) {
+        return res.status(400).json({ error: 'Listing id must be a number' })
+    }
+
+    const analysis = await prisma.listingAnalysis.findUnique({
+        where: { listingId },
+    })
+    if (!analysis) {
+        return res.status(404).json({ error: `No analysis for listing ${listingId}` })
+    }
+    res.json(analysis)
+})
+
+// get a filter
 app.get('/filters/:id', async (req, res) => {
     const filter = await prisma.filters.findUnique({
         where: { id: parseInt(req.params.id) },
@@ -63,14 +84,14 @@ app.get('/filters/:id', async (req, res) => {
     res.json(filter);
 });
 
-// Get all filters
+// get all filters
 app.get('/filters', async (req, res) => {
     const filters = await prisma.filters.findMany();
     res.json(filters);
 });
 
 
-// Get all filters for a user
+// get all filters for a user
 app.get('/filters/user/:userId', async (req, res) => {
     const filters = await prisma.filters.findMany({
         where: {
@@ -80,13 +101,13 @@ app.get('/filters/user/:userId', async (req, res) => {
     res.json(filters);
 });
 
-// Create a listing
+// create a listing
 app.post('/listings', async (req, res) => {
     const listing = await prisma.cars.create({ data: req.body })
     res.json(listing)
 })
 
-// Create a filter
+// create a filter
 app.post('/filters', async (req, res) => {
     const filter = await prisma.filters.create({
         data: {
@@ -107,7 +128,7 @@ app.post('/filters', async (req, res) => {
     res.json(filter)
 })
 
-// Delete a filter
+// delete a filter
 
 app.delete('/filters/delete/:id', async (req, res) => {
     const filter = await prisma.filters.delete({
@@ -118,13 +139,13 @@ app.delete('/filters/delete/:id', async (req, res) => {
     res.json(filter)
 })
 
-// Create a filter-car match
+// create a filter-car match
 app.post('/filterListing', async (req, res) => {
     const filterListing = await prisma.filterListing.create({ data: req.body })
     res.json(filterListing)
 })
 
-// Create a user
+// create a user
 app.post('/user', async (req, res) => {
     try {
         const user = await prisma.user.create({ data: req.body })
@@ -135,7 +156,7 @@ app.post('/user', async (req, res) => {
 
 })
 
-// Get a user
+// get a user
 app.get('/user/:clerkId', async (req, res) => {
     const user = await prisma.user.findUnique({
         where: { clerkId: req.params.clerkId }

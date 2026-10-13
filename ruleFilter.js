@@ -1,6 +1,8 @@
 // check simple rules before spending on analysis. If car failes, analysis status set to REJECTED_RULES, so we never analayse but we keep it in the db
 
-export const MIN_PRICE = 50
+import { config } from './my-api/agent/config.mjs'
+
+const { minPrice } = config.rules
 
 const JUNK_DESCRIPTION_PATTERN = /\b(breaking(?!\s+(system|assist|pads?|discs?)\b)|for\s+parts|wanted)\b/i
 
@@ -15,8 +17,8 @@ export function checkRules(car) {
         return { pass: false, reason: 'no images' }
     }
 
-    if (car.price < MIN_PRICE) {
-        return { pass: false, reason: `price £${car.price} is under £${MIN_PRICE}` }
+    if (car.price < minPrice) {
+        return { pass: false, reason: `price £${car.price} is under £${minPrice}` }
     }
 
     return { pass: true, reason: null }

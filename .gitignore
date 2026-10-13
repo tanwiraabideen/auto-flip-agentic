@@ -4,3 +4,6 @@ node_modules
 
 # screenshots the scraper saves when a search page fails
 debug-*.png
+
+# eval run outputs
+my-api/eval/results/

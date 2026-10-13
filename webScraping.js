@@ -2,11 +2,10 @@
 
 import { createRequire } from 'module'
 import puppeteer from "puppeteer";
-import { checkRules } from './ruleFilter.js'
 
-const SERVER_URL = process.env.SERVER_URL ?? "http://192.168.1.101:3000"
-const MAX_PAGES_TO_SCRAPE = 5
-const MAX_SEARCH_PAGE_ATTEMPTS = 3
+import { config } from './my-api/agent/config.mjs'
+
+const { serverUrl, maxPages, searchPageAttempts, headless } = config.scraper
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -76,30 +75,10 @@ function normaliseUrl(href) {
 }
 
 
-// filter check
-
-const normaliseText = (value) => String(value ?? '').toLowerCase().replace(/[_-]/g, ' ').trim()
-const isWildcard = (value) => value == null || value === '' || normaliseText(value) === 'any'
-
-const withinRange = (value, min, max) => {
-    if (min != null && (value == null || value < min)) return false
-    if (max != null && (value == null || value > max)) return false
-    return true
-}
-
-function matchesFilter(listing, filter) {
-    return withinRange(listing.price, filter.minPrice, filter.maxPrice) &&
-        withinRange(listing.year, filter.minYear, filter.maxYear) &&
-        withinRange(listing.mileage, filter.minMileage, filter.maxMileage) &&
-        (isWildcard(filter.make) || normaliseText(filter.make) === normaliseText(listing.make)) &&
-        (isWildcard(filter.model) || normaliseText(filter.model) === normaliseText(listing.model))
-}
-
-
 // API helpers
 
 async function apiRequest(path, options = {}) {
-    const res = await fetch(`${SERVER_URL}${path}`, {
+    const res = await fetch(`${serverUrl}${path}`, {
         ...options,
         headers: { 'Content-Type': 'application/json', ...options.headers },
     })
@@ -145,7 +124,7 @@ let cookiesAccepted = false
 async function getListingUrls(page, pageNum) {
     const searchUrl = `https://www.gumtree.com/search?search_category=cars&search_location=uk&sort=date&page=${pageNum}`
 
-    for (let attempt = 1; attempt <= MAX_SEARCH_PAGE_ATTEMPTS; attempt++) {
+    for (let attempt = 1; attempt <= searchPageAttempts; attempt++) {
         try {
             await page.goto(searchUrl, { waitUntil: "domcontentloaded" })
             if (!cookiesAccepted) {
@@ -165,10 +144,10 @@ async function getListingUrls(page, pageNum) {
                 return urls
             })
         } catch (error) {
-            console.log(`Failed to load search page ${pageNum} (attempt ${attempt}/${MAX_SEARCH_PAGE_ATTEMPTS}): ${error}`)
+            console.log(`Failed to load search page ${pageNum} (attempt ${attempt}/${searchPageAttempts}): ${error}`)
             // saved so you can see what the page actually looked like when it failed
             await page.screenshot({ path: `debug-search-page-${pageNum}.png` }).catch(() => {})
-            if (attempt < MAX_SEARCH_PAGE_ATTEMPTS) {
+            if (attempt < searchPageAttempts) {
                 console.log('Sleeping for 2 mins before retrying')
                 await sleep(1000 * 120)
             }
@@ -266,13 +245,7 @@ function buildListing(raw, listingUrl) {
 }
 
 export default async function fetchNewData() {
-    const summary = { added: 0, rejected: 0, skipped: 0, failed: 0, matches: 0 }
-
-    const filters = await apiRequest('/filters')
-    if (!Array.isArray(filters)) {
-        throw new Error(`Expected an array of filters, got ${JSON.stringify(filters)}`)
-    }
-    console.log(`Found ${filters.length} filters.`)
+    const summary = { added: 0, skipped: 0, failed: 0 }
 
     const existingListings = await apiRequest('/listings')
     const seenUrls = new Set(existingListings.filter(listing => listing.url).map(listing => normaliseUrl(listing.url)))
@@ -281,7 +254,7 @@ export default async function fetchNewData() {
     let browser = null
     try {
         browser = await puppeteer.launch({
-            headless: false,
+            headless,
             args: ['--no-sandbox', '--disable-setuid-sandbox'],
         });
     } catch (error) {
@@ -291,7 +264,7 @@ export default async function fetchNewData() {
     try {
         const page = await browser.newPage();
 
-        for (let pageNum = 1; pageNum <= MAX_PAGES_TO_SCRAPE; pageNum++) {
+        for (let pageNum = 1; pageNum <= maxPages; pageNum++) {
             const listingUrls = await getListingUrls(page, pageNum)
             if (!listingUrls) {
                 console.log(`Skipping search page ${pageNum}, it never loaded`)
@@ -316,39 +289,13 @@ export default async function fetchNewData() {
                         console.log(`Skipping ${listingUrl}: ${error}`)
                         summary.skipped++
                     } else {
-                        // junk ads are still saved so they aren't scraped again, but are marked rejected
-                        const rules = checkRules(listing)
-                        if (!rules.pass) {
-                            console.log(`Rejected by rules (${rules.reason}): ${listingUrl}`)
-                            listing.analysisStatus = 'REJECTED_RULES'
-                        }
-
+                        // saved as PENDING. run.js does the rules, triage, analysis and filter matching.
                         console.log(`Adding following listing to db: ${JSON.stringify(listing)}`)
-                        const savedListing = await apiRequest('/listings', {
+                        await apiRequest('/listings', {
                             method: 'POST',
                             body: JSON.stringify(listing),
                         })
-
-                        if (!rules.pass) {
-                            summary.rejected++
-                            await sleep(6000)
-                            continue
-                        }
                         summary.added++
-
-                        // checking if new listing matches any filters
-                        for (const filter of filters.filter(filter => matchesFilter(listing, filter))) {
-                            try {
-                                console.log(`FOUND A MATCH for filter ${filter.id}`)
-                                await apiRequest('/filterListing', {
-                                    method: 'POST',
-                                    body: JSON.stringify({ filterId: filter.id, listingId: savedListing.id }),
-                                })
-                                summary.matches++
-                            } catch (err) {
-                                console.log(`Error when adding filter-car match: ${err}`)
-                            }
-                        }
                     }
                 } catch (error) {
                     console.log(`Error when scraping ${listingUrl}: ${error}`)

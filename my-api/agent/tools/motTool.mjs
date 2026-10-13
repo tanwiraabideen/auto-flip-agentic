@@ -1,7 +1,7 @@
 // get_mot_history tool the analysis agent can call.
 
 import { tool } from '@langchain/core/tools'
-import { z } from 'zod'
+import { MotHistoryInput } from '../schemas.mjs'
 import { getMotHistory, normaliseRegistration } from './motClient.mjs'
 
 // regex to group advisories  (maybe remove because we want model to do judgment)
@@ -101,8 +101,6 @@ export const getMotHistoryTool = tool(
         description: 'Looks up the official DVSA MOT history for a UK car by its registration. ' +
             'Returns the make and model on record, the latest MOT result and expiry, mileage readings over time ' +
             'with a check for mileage rollback, the number of failed tests and recurring advisories.',
-        schema: z.object({
-            registration: z.string().describe('UK registration plate, e.g. "AB12 CDE"'),
-        }),
+        schema: MotHistoryInput,
     }
 )

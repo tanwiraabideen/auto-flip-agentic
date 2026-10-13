@@ -1,0 +1,674 @@
+[
+  {
+    "id": 25213,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "BREAKING_FOR_PARTS"
+    ],
+    "note": "Breaking for parts",
+    "listing": {
+      "id": 25213,
+      "make": "Volkswagen",
+      "model": "POLO",
+      "year": 2007,
+      "price": 500,
+      "mileage": 57000,
+      "location": "Yardley, West Midlands",
+      "description": "BREAKING FOR PARTS\n\nHI FOR SALE IS MY VOLKSWAGEN POLO 2007 1.4 PETROL. PARTS\n\nVEHICLE DETAILS:\n\nVolkswagen Polo Hatchback\n1.4 SE (80ps) 5d 2007/57- (02-09)\n\nMILAGE:\n\nV5 AVAILABLE\n\nI AM BREAKING THE VEHICLE, ALL PARTS AVAILABLE.\n\nCONTACT ME FOR PRICES ON PARTS AND IF YOU WANT THE WHOLE VEHICLE MAKE ME A OFFER\n\nCONTACT WASEEM\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 36514,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "BREAKING_FOR_PARTS"
+    ],
+    "note": "Breaking for parts",
+    "listing": {
+      "id": 36514,
+      "make": "Vauxhall",
+      "model": "ZAFIRA",
+      "year": 2014,
+      "price": 200,
+      "mileage": 92905,
+      "location": "Surrey Quays, London",
+      "description": "breaking my vauxhall zafira\nall parts are available\nGearbox %100 and it come with clutch which has %90 for\nAll panels available\nHeadlights available\nTyres they good as brand new, with wheel available\nMessage for any parts required\nThanks\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 27560,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "BREAKING_FOR_PARTS",
+      "SPARES_OR_REPAIRS"
+    ],
+    "note": "Non-runner being sold off as parts; seller wrote \"BRAKING\", so the regex misses it",
+    "listing": {
+      "id": 27560,
+      "make": "BMW",
+      "model": "5 SERIES",
+      "year": 2006,
+      "price": 600,
+      "mileage": 213666,
+      "location": "Hythe, Hampshire",
+      "description": "BRAKING / PARTS / SELLING OUR E61 520D 2L M SPORT TOURING.\n\n“”IF THE AD IS STILL UP IT IS ALL STILL FOR SALE””\n\nNON RUNNER\n\n\nINTERIOR\n\nSTEERING WHEEL - SOLD\nBOOT STRUTS - SOLD\nCUP HOLDERS - SOLD\nEAS MODULE - SOLD\nREAR VIEW MIRROR + SURROUND - SOLD\nREAR PASSENGER VENTS - SOLD\nREAR PASSENGER 12v PLUG - SOLD\n\nENGINE BAY\n\nDRIVERS SIDE FILTER COVER - SOLD\nAIR INTAKE PIPE - SOLD\n\nEXTERIOR\n\nBUMPERS - AWAITING CONFRIMATION\n\n\nCHEAPEST 520D SPARES/REPAIRS ON THE INTERNET\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 26487,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "WANTED_AD"
+    ],
+    "note": "\"We buy any car / scrap your car\" advert, not a sale",
+    "listing": {
+      "id": 26487,
+      "make": "Seat",
+      "model": "IBIZA",
+      "year": 2010,
+      "price": 500,
+      "mileage": 112000,
+      "location": "Belfast City Centre, Belfast",
+      "description": "SELL / SCRAP YOUR CAR OR VAN TODAY HASSLE FREE\n\nWE BUY VECHICLES,\n\n✅ WITH OR WITHOUT FAULTS\n\n✅ SHORT MOTS\n\n✅ CARS FOR EXPORT\n\n✅ MOT FAILURES\n\n✅ LAY UPS\n\n✅ SCRAP CARS\n\n✅ UNWANTED CARS OR VANS\n\n✅ NON RUNNERS\n\n✅ WE CAN ALSO SETTLE YOUR FINANCE AGREEMENT\n\nALL BOUGHT FOR CASH / BANK TRANSFER\n\nFREE SAME DAY COLLECTION\n\nNO ADDED CHARGES\n\nALL DVA PAPERWORK COMPLETED\n\nIF YOU WANT A NO HASSLE SALE THEN CONTACT US USING THE DETAILS BELOW\n\nMESSAGE US WITH THE DETAILS OF YOUR CAR\n\nTEXT, WHATSAPP OR CALL\n0️⃣7️⃣8️⃣2️⃣1️⃣9️⃣2️⃣0️⃣5️⃣9️⃣9️⃣\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 26778,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "SPARES_OR_REPAIRS"
+    ],
+    "note": "Non-runner, hybrid battery fault",
+    "listing": {
+      "id": 26778,
+      "make": "Toyota",
+      "model": "PRIUS",
+      "year": 2010,
+      "price": 1990,
+      "mileage": 177000,
+      "location": "Derby, Derbyshire",
+      "description": "Toyota Prius 2010 – Standard UK Model – White – Non-Runner (Hybrid Battery Fault) – £1,990\n\nFor sale is my 2010 Toyota Prius, standard UK model, finished in white. This car has been well looked after and includes two keys and a spare tire. It comes with part service history and a valid MOT until 3rd June 2026.\n\nThe tires are almost new, replaced recently and driven only around 5,000 miles. The car has leather seats, alloy wheels, and an automatic transmission, offering a comfortable and smooth driving experience.\n\nWhen running, the car achieved around 54 miles per gallon, making it very economical to drive.\nCurrently, the vehicle is not running due to a diagnosed issue with the hybrid battery.\n\nAdditional Details:\n\nPrice: £1,990\n\nMileage: 177,000 miles\n\nModel Year: 2010\n\nColour: White\n\nTransmission: Automatic\n\nFuel Type: Hybrid\n\nMOT Valid Until: 03/06/2026\n\nService History: Part\n\nCondition: Non-runner (hybrid battery fault)\n\n\nPrice: £1,990 (open to reasonable offers)\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 27278,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "SPARES_OR_REPAIRS"
+    ],
+    "note": "Spares or repairs, engine knocking",
+    "listing": {
+      "id": 27278,
+      "make": "Mini",
+      "model": "PACEMAN",
+      "year": 2014,
+      "price": 2495,
+      "mileage": 83000,
+      "location": "Scunthorpe, Lincolnshire",
+      "description": "Spares or repairs due to engine knocking, car is mint apart from that, service history, 2 keys, part exchange welcome, Tel 01724 270072,\n\nSafety Belt Pretensioners\n\nAbout us:\nAxholme Car Exchange - Used cars in Scunthorpe, Lincolnshire\nQuality used cars by Axholme Car Exchange in Scunthorpe...\nWHY BUY FROM Axholme Car Exchange? We are a family run business with over 40 years motor trade experience and trading from our present location on Scotter Road since 1990.\n\nWe pride ourselves on customer satisfaction and have many longstanding repeat customers who would testify to this and regularly recommend us to family and friends.\n\nOur cars are handpicked by ourselves specialising in value for money cars many with below average mileage, and as we only sell genuine HPI clear vehicles there will be no nasty suprises or hidden agendas.\n\nWe offer a hassle free no pressure selling approach with excellent part exchange allowances and competitive finance rates so why not pay us a visit and check us out.\n\nTo locate Axholme Car Exchange visit our Location page where you can find a detailed map and details of how to get from your door to ours.\n\nIf you need to contact us don't hesitate to pick up the telephone 01724 270072.\n\nWe hope you enjoy your visit to the Axholme Car Exchange web site.\n\nOpening Hours:\nMo: 09:00 AM to 06:00 PM\nTu: 09:00 AM to 06:00 PM\nWe: 09:00 AM to 06:00 PM\nTh: 09:00 AM to 06:00 PM\nFr: 09:00 AM to 06:00 PM\nSa: 09:00 AM to 06:00 PM\nSu: Closed\n\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 27673,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "SPARES_OR_REPAIRS"
+    ],
+    "note": "Spares and repairs, noisy timing chain, engine light on",
+    "listing": {
+      "id": 27673,
+      "make": "Renault",
+      "model": "CLIO",
+      "year": 2013,
+      "price": 1200,
+      "mileage": 108000,
+      "location": "Partick, Glasgow",
+      "description": "Listing as Spares and repairs - its been parked up for a little while due to personal circumstances. The car starts (Jump start as sitting) drives and stops.\n\nIt has a noisey timing chain, it rattles on start up, eml light is on - anti pollution fault - it may all be linked? It is sold as seen, ideal for someone mechanically minded or willing to spend a little bit to get it mint again. The price is firm - these are selling for 2.5k!\n\n108k miles\nMOT 3/26 No advisories\n£20 Tax\n1 key\nV5 to be applied for as everything has been misplaced\nLez compliant\nHpi clear\n\nBodywork is in good condition, with a little wear and tear as your would expect of a car of this age, nothing major however.\n\nInterior is clean and benefits from being pet and smoke free owned\n\nNo part exchanges or swaps.\n\nThank you\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 26906,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "SPARES_OR_REPAIRS",
+      "BREAKING_FOR_PARTS"
+    ],
+    "note": "Spares or repairs, no MOT, \"may also break\"",
+    "listing": {
+      "id": 26906,
+      "make": "Mercedes-Benz",
+      "model": "CLK",
+      "year": 2009,
+      "price": 1790,
+      "mileage": 89000,
+      "location": "Leicester, Leicestershire",
+      "description": "Selling as spares or repairs. May also break. Retail is just under 4k. Runs and drives. No MOT. Ticking noise in acceleration, glove box needs repair. Engine and gearbox is good. Trade to trade sale. No guarantees or warrantys.\n\nSafety Belt Pretensioners\n\nAbout us:\nIf you are looking for great savings on quality used cars and vans we are a family run business in the Leicester area, then you have reached the right place. MotorLine Car Sales are a specialist used car and van dealer based in Leicestershire. We are proud to offer you a first-class customer service and very competitive pricing. We stock a range of used cars and vans that suit all budgets and lifestyles so we are sure to have the right car or van for you. In order to offer cars and vans to suit everyone we make sure that we update our stocklist regularly. It is therefore always worth giving us a call, even if you don't see what you are looking for on our website. We offer advice on vehicles and also vehicle maintenance, our friendly staff will always go the extra mile to guarantee that you receive the advice and support that you need. Our showroom in Leicester stocks a wide range of cars that are ready for viewing today.\n\nWarranty:\nUp to 3 years warranty available at the best rates\n\nTerms and Conditions:\nAll detail within adverts is accurate at time of publishing\nDeposits are non-refundable unless otherwise agreed\nPhoto ID may be required\n\n\nOpening Hours:\nMo: 08:00 AM to 08:00 PM\nTu: 08:00 AM to 08:00 PM\nWe: 08:00 AM to 08:00 PM\nTh: 08:00 AM to 08:00 PM\nFr: 08:00 AM to 08:00 PM\nSa: 08:00 AM to 08:00 PM\nSu: 09:00 AM to 05:00 PM\n\nWhy buy from us?\n* Quality cars and low prices\n* Most cars will come with 2 keys, service history, long MOT and a 32 point mechanical check\n* HPI Clear unless stated otherwise\n* All major debit cards accepted.\n* Nationwide delivery, Warranty and Finance available\n\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 28747,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "SPARES_OR_REPAIRS"
+    ],
+    "note": "Spares or repairs, no MOT, stood for 3-5 years",
+    "listing": {
+      "id": 28747,
+      "make": "Ford",
+      "model": "ESCORT",
+      "year": 1997,
+      "price": 650,
+      "mileage": 36299,
+      "location": "Stanford-le-Hope, Essex",
+      "description": "1998 Ford Escort 1.6 PetrolOnly 36299 milesRuns and drives HAS FLAT BATTREY No MOT, we have the v5, 2 former keepers in totalBeen stood for 3-5 years Sold as spares or repairs, no returns, sold as seen Has some rust around it and could do with some paint workModern classicWe advise it is recovered away to whoever buys itLocated in Fobbing Essexfor any more info please contact 07540978639we will only accept cash or bank transfer as payment.\n\nSafety Belt Pretensioners\n\nAbout us:\nWe are a family-run business with over 30 years of experience. We value the trust that we have built over the years between ourselves and our customers.\n\nWhen you buy from us, you can buy with confidence in knowing that you are buying from a trusted, well-established supplier.\n\nAuthorised Treatment Facility\nDVLA Certificate of Destruction\nWaste Carriers Licence\nFully Licensed by the Environment Agency\n\nWith over 30 years of experience, we’re committed to providing our customers with great service, allowing you to buy with confidence.\n\nExperienced and qualified mechanics\nProfessional, efficient and friendly service\nParts and Spares for all major manufacturers\nVehicles wanted for dismantling\nScrap Vehicle Specialists\n\nOpening Hours:\nMo: 08:00 AM to 05:00 PM\nTu: 08:00 AM to 05:00 PM\nWe: 08:00 AM to 05:00 PM\nTh: 08:00 AM to 05:00 PM\nFr: 08:00 AM to 05:00 PM\nSa: 08:00 AM to 02:00 PM\nSu: Closed\n\nWhy buy from us?\n* Established - 20 years experience\n* Trusted - Excellent customer reviews\n* Registered - Licensed by the Environment Agency &amp; DVLA\n* Local\n* Family owned\n\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 24160,
+    "label": "junk",
+    "expectedTriagePass": false,
+    "expectedCategories": [
+      "WRITE_OFF"
+    ],
+    "note": "Cat S insurance write-off",
+    "listing": {
+      "id": 24160,
+      "make": "Audi",
+      "model": "E-TRON",
+      "year": 2020,
+      "price": 22500,
+      "mileage": 35814,
+      "location": "Colchester, Essex",
+      "description": "This is my Q8 E-Tron 55 Launch Edition which is recorded as a Cat S insurance loss due to minor left front damage, left front wing, headlamp and front bumper have been replaced. Car is immaculate throughout.402 bhp and 230 mile range, £195 for 12 months road tax.\n\nSafety Belt Pretensioners\n\nOpening Hours:\nMo: 09:00 AM to 06:00 PM\nTu: 09:00 AM to 06:00 PM\nWe: 09:00 AM to 06:00 PM\nTh: 09:00 AM to 06:00 PM\nFr: 09:00 AM to 06:00 PM\nSa: 09:00 AM to 06:00 PM\nSu: Closed\n\n",
+      "imageUrls": [],
+      "url": null
+    }
+  },
+  {
+    "id": 40955,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £4,995 vs typical £7,950 for a 2016 Ford KUGA (15 listings), 63% of typical",
+    "listing": {
+      "id": 40955,
+      "make": "Ford",
+      "model": "KUGA",
+      "year": 2016,
+      "price": 4995,
+      "mileage": 87127,
+      "location": "Motherwell, North Lanarkshire",
+      "description": "Ford Kuga Titanium 2.0 TDCI Euro6 for sale. Good condition inside and out. Car comes with 1 year MOT and low mileage, well looked after reliable car. Private plate is not included.\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/e3a12b7f232e435d9a_6f5003d26053/86"
+      ],
+      "url": "https://www.gumtree.com/p/ford/ford-kuga-titanium-2.0tdci-for-sale-great-car-/1512108446"
+    }
+  },
+  {
+    "id": 41213,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £3,495 vs typical £5,541 for a 2016 Ford FIESTA (40 listings), 63% of typical",
+    "listing": {
+      "id": 41213,
+      "make": "Ford",
+      "model": "FIESTA",
+      "year": 2016,
+      "price": 3495,
+      "mileage": 63000,
+      "location": "Southampton, Hampshire",
+      "description": "For a sale great reliable 2016 Ford Fiesta Zetec 1.25l Petrol with low mileage only 63.000. Serviced regularly inc cambelt kit last year, last service done a couple months ago. MOT till August (no advisories), hpi clear, no dents or warning lights. Clean inside frome smoke free home. Regrettable sale only selling due to needing a larger car. Do not feel hesitate to ask any questions!\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/8013ea47b9304a0184_90eb6f691798/86"
+      ],
+      "url": "https://www.gumtree.com/p/ford/2016-ford-fiesta-zetec-1.25l-petrol-5-doors-blue-fsh-low-mileage-superb/1512114554"
+    }
+  },
+  {
+    "id": 40830,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £5,250 vs typical £7,950 for a 2016 Ford KUGA (15 listings), 66% of typical",
+    "listing": {
+      "id": 40830,
+      "make": "Ford",
+      "model": "KUGA",
+      "year": 2016,
+      "price": 5250,
+      "mileage": 76000,
+      "location": "Pontypool, Torfaen",
+      "description": "My wife's Ford Kuga which we have owned for 7 years. Full service history (just had a service in March 2026). Mechanically sound (MOT due Sept 2026) with no issues.\n\n2l turbo diesel\n76k miles\nHPI clear\n\nDAB radio\ncruise control\nRear parking sensors\nAircon\n\nSmall ding on the rear bumper but otherwise good condition for age/mileage.\n\n\nIf its still listed then its still available.\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/0c58db79602b49af9a_15f0d958a882/86"
+      ],
+      "url": "https://www.gumtree.com/p/ford/2016-ford-kuga-2.0-tdci-150-titanium-5dr-2wd-hatchback-diesel-manual/1512106009"
+    }
+  },
+  {
+    "id": 41293,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £3,999 vs typical £5,995 for a 2015 Nissan JUKE (27 listings), 67% of typical",
+    "listing": {
+      "id": 41293,
+      "make": "Nissan",
+      "model": "JUKE",
+      "year": 2015,
+      "price": 3999,
+      "mileage": 57636,
+      "location": "Sandwell, West Midlands",
+      "description": "Nissan Juke Acenta (2015) 1.2 DIG-T Acenta SUV 5dr Petrol Manual Euro 5 (s/s) Euro 5 (115 ps) 2 former keeper, Fresh MOT new service good condition and 3 months warranty ((( category N very light damage in the front bumper all old photos are available before I Repair it ))) 17in Alloy Wheels - Sport, 60-40 Split Rear Folding Seats, AUX-In Socket, Body Coloured Handles, Bumpers - Body Coloured, Chrome Interior Door Handles, Climate Control, Cruise Control, EBD - Electronic Brakeforce Distribution, ESP - Electronic Stability Programme, First Aid Kit, Front Fog Lights, Front Map Reading Lights, Glovebox, Grey Centre Console-Door Trim Finishers, Head Restraints - Front, Head Restraints - Rear, Headliner - Grey, High Visibility Jackets, Leather Gear Knob, Nissan Dynamic Control System, Passenger Airbag Cut-Off Switch, Pollen Filter, Rear Privacy Glass, Safety Kit, Speakers x4, TPMS - Tyre Pressure Monitoring System, Telephone - Bluetooth Integration, Traction Control, USB Port, Warning Triangle, Hi, I've had five cars since yesterday. None of those cars shows on my eBay motors can you please add that for me thanks\n\nPassenger Airbag; Alloy Wheels; Climate Control; Cruise Control; Electronic Stability Program (ESP); Safety Belt Pretensioners\n\nAbout us:\nWe are used car specialists based in Oldbury , West Midlands, and we pride ourselves on providing great used cars and great service.\n\nWe aim to provide you with the highest level of service from the moment you contact us and long into the future.\n\nPressure-free environment - You have our promise that we will give you the time and space that you require to make the right choice.\n\nKnowledgeable staff - Our experienced consultants are experts in their field, so take the opportunity to ask them any questions you may have. They are there to help.\n\nAll the help you need - We regularly help our customers tax vehicles, point them in the right direction for insurance, and do anything else they need to get safely and effortlessly on the road.\n\nAftersales - We want to take this opportunity to reassure you that you will be looked after long after you leave the forecourt.\n\nThere is a reason our customers regularly recommend us to friends and family.\n\nGive us a call today to arrange a test drive or consultation. We look forward to hearing from you.\n\nWarranty:\nWe give 3 months warranty\n\n\nWhy buy from us?\n* Pressure-free environment\n* Knowledgeable staff\n* All the help you need\n* Aftersales\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/440ffbef1669454bb2_33a797f32a13/86"
+      ],
+      "url": "https://www.gumtree.com/p/nissan/2015-nissan-juke-acenta-dig-t-5-door-petrol/1509200514"
+    }
+  },
+  {
+    "id": 40949,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £2,300 vs typical £3,295 for a 2013 Ford FOCUS (33 listings), 70% of typical",
+    "listing": {
+      "id": 40949,
+      "make": "Ford",
+      "model": "FOCUS",
+      "year": 2013,
+      "price": 2300,
+      "mileage": 101871,
+      "location": "Strabane, County Tyrone",
+      "description": "2013 Ford Focus Zetec Tdci. 1560cc. Diesel. 101k miles.\nMOT until September 2026.\nRoad Tax £20 per annum.\n\n£2300 o.n.o\n\nA reliable and economical car.\nDrives well and ideal for commuting and everyday use.\nSmall tear on driver seat.\nOverall a solid, cheap and practical car with plenty of life left.\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/477bf1786ae047cabd_6a93d21eaa51/86"
+      ],
+      "url": "https://www.gumtree.com/p/ford/2013-ford-focus-zetec-tdci/1512108335"
+    }
+  },
+  {
+    "id": 39616,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £3,150 vs typical £4,500 for a 2015 Ford FOCUS (33 listings), 70% of typical",
+    "listing": {
+      "id": 39616,
+      "make": "Ford",
+      "model": "FOCUS",
+      "year": 2015,
+      "price": 3150,
+      "mileage": 51300,
+      "location": "North London, London",
+      "description": "🔥 Quick sale Low mileage example with only 51300 miles. The car is in good condition for its age, clean inside and outside, and drives well. Very economical to run with only £20 road tax, making it a great daily car.\n\nComes with two keys and is the Titanium model, which includes good specifications and comfort features.\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/0e25484b6396410f8d_86304bcd3d3f/86"
+      ],
+      "url": "https://www.gumtree.com/p/ford/ford-focus-2015-titanium-2-keys-quick-sale/1511594934"
+    }
+  },
+  {
+    "id": 39436,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £4,000 vs typical £5,795 for a 2014 Vauxhall ASTRA GTC (13 listings), 69% of typical",
+    "listing": {
+      "id": 39436,
+      "make": "Vauxhall",
+      "model": "ASTRA GTC",
+      "year": 2014,
+      "price": 4000,
+      "mileage": 53202,
+      "location": "Bishopbriggs, Glasgow",
+      "description": "2014 Vauxhall Astra GTC 1.4T 53,202 Miles\nFull Service History\n2 Keys\nLow Miles\nBrand new pagid disc and pads all round\n\nWell looked after with full service history documenting every visit, giving complete peace of mind. Low mileage for its age, showing this car has been genuinely cared for and not abused. Braking is covered with brand new Pagid discs and pads fitted on all four corners.\n\nComes with 2 keys. MOT until September 2026 with no advisories to worry about. The 1.4 Turbo engine offers a great balance of performance and fuel economy, perfect for both commuting and longer journeys. A head turning coupe at a sensible price. viewings welcome.\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/3c189898ab264546a1_0e068068ba8b/86"
+      ],
+      "url": "https://www.gumtree.com/p/vauxhall/vauxhall-astra-gtc-hatchback-2014-manual-1364-cc-3-doors/1511387444"
+    }
+  },
+  {
+    "id": 41342,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £1,850 vs typical £2,695 for a 2013 Vauxhall ZAFIRA (13 listings), 69% of typical",
+    "listing": {
+      "id": 41342,
+      "make": "Vauxhall",
+      "model": "ZAFIRA",
+      "year": 2013,
+      "price": 1850,
+      "mileage": 94000,
+      "location": "Uxbridge, London",
+      "description": "7 SEATS MPV WITH LOVELY DRIVE.\nMOT TILL NOV 2026.\nSERVICE HISTORY.\nWARRANTED MILEAGE.\nHPI CLEAR.\n2 X OWNERS.\n2 X KEYS.\nALLOYS.\nAUXILIARY.\nBLUETOOTH/HANDS FREE.\nFRONT AND REAR PARKING SENSORS.\nCLIMATE CONTROL.\nP/EX WELCOME.\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/a4391281eef74e1f86_aa072fc9970e/86"
+      ],
+      "url": "https://www.gumtree.com/p/vauxhall/vauxhall-zafira-design-63-plate-2013-1.6/1512117165"
+    }
+  },
+  {
+    "id": 40059,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £8,999 vs typical £13,272 for a 2017 BMW 4 SERIES (8 listings), 68% of typical",
+    "listing": {
+      "id": 40059,
+      "make": "BMW",
+      "model": "4 SERIES",
+      "year": 2017,
+      "price": 8999,
+      "mileage": 85000,
+      "location": "Wolverhampton, West Midlands",
+      "description": "BMW 420D M Sport (2017)\n\nI’m testing the market as I’m considering selling my BMW 420D M Sport. I’ve recently moved to a higher vehicle, and this one now spends most of its time parked, which feels like a waste given how well it drives.\n\nThe car is currently on 85,000 miles, but it feels exceptionally fresh. It has been maintained to a very high standard, with significant mechanical work carried out to ensure long-term reliability and peace of mind.\n\nMajor work completed includes:\n• Engine rebuild\n• Turbo\n• Timing chain\n• Oil pump & oil cooler\n• Turbo pipes\n• Battery\n• Starter motor\n• Full service\n\nAll work is backed up with paperwork and receipts.\n\nThis isn’t a car that needs money spending on it—whoever owns it next can enjoy it without the usual worries.\n\nI had previously purchased this vehicle at the time as a category S\n\nVisually, the car really stands out. The custom GTS bonnet gives it an aggressive presence, complemented by the white exterior, blood red interior, and carbon fibre detailing throughout. It’s a head-turner in every sense.\n\nI’ll let the pictures do the rest of the talking.\n\nAny further questions, please do get in contact : )\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/c5e758f90c98419ca7_7b1850bce170/86"
+      ],
+      "url": "https://www.gumtree.com/p/bmw/bmw-4-series-coupe-2017-semi-auto-1995-cc-2-doors/1509456762"
+    }
+  },
+  {
+    "id": 41118,
+    "label": "good",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Good deal: £4,795 vs typical £6,745 for a 2016 Seat LEON (8 listings), 71% of typical",
+    "listing": {
+      "id": 41118,
+      "make": "Seat",
+      "model": "LEON",
+      "year": 2016,
+      "price": 4795,
+      "mileage": 115741,
+      "location": "Southend-on-Sea, Essex",
+      "description": "SEAT LEON SE DYNAMIC TECHNOLOGY TSI\n1.2 PETROL ENGINE 109BHP ULEZ COMPLIANT\n6 SPEED MANUAL GEAR BOX\n2016-FIRST REGISTRATION\nLONG MOT TILL DECEMBER 2026\nFULL SERVICE HISTORY WITH CAMBELT CHANGED IN 2021\nPOWER STEERING\nELECTRIC WINDOWS MIRRORS\nREMOTE CENTRAL LOCKING\nCROUSE CONTROL\n£35 ROAD TAX A YEAR\nHPI CLEAR\nDRIVES VERY WELL\nNO TIME WASTERS\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/61fd3c88d4054bfe9a_b16e1e911b6a/86"
+      ],
+      "url": "https://www.gumtree.com/p/seat/full-service-history-seat-leon-1.2-tsi-petrol-manual-2016-reg-ulez-free/1512113441"
+    }
+  },
+  {
+    "id": 41323,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £2,650 vs typical £995 for a 2009 Ford KA (9 listings), 266% of typical",
+    "listing": {
+      "id": 41323,
+      "make": "Ford",
+      "model": "KA",
+      "year": 2009,
+      "price": 2650,
+      "mileage": 81400,
+      "location": "Wrexham",
+      "description": "This 2009 Ford Ka Style is a great choice with its MOT valid until May 2026, offering peace of mind for the coming years. This particular Ka is equipped with a 1.2 litre petrol engine and comes with partial service history.The Ford Ka Style is known for its impressive fuel economy, achieving up to 55 miles per gallon, which is a significant advantage for everyday driving. Furthermore, this model benefits from a low insurance group and low CO2 emissions, indicating it is more economical to run and own compared to many other vehicles in its class.\n\nSafety Belt Pretensioners\n\nAbout us:\nIf you are looking for great savings on quality used cars and vans in the Wrexham area, then you have reached the right place. Wrexham Motor Group are a specialist used car and van dealer based in Clwyd. We are proud to offer you a first class customer service and very competitive pricing, so please browse our stock list. At Wrexham Motor Group, we stock a range of used cars and vans to suit all budgets and lifestyles so we are sure to have the right car or van for you.\n\nIf you are looking for a second hand car or van in Wrexham, then don't delay, call us today. In order to offer cars and vans to suit everyone we make sure that we update our stocklist regularly. It is therefore always worth giving us a call, even if you don't see what you are looking for on our website.\n\nWe offer advice on vehicles and vehicle maintenance and our friendly staff will go the extra mile to guarantee that you receive the advice and support you need.\n\nAt Wrexham Motor Group we don't just sell cars and vans, we do everything possible to get you on the road with your perfect vehicle. Why not come along to our dealership in Wrexham? We look forward to meeting you!\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/4882b5291bb847ed99_22c9d7a88aa6/86"
+      ],
+      "url": "https://www.gumtree.com/p/ford/2009-ford-ka-1.2-style-euro-4-3dr-hatchback-petrol-manual/1507732323"
+    }
+  },
+  {
+    "id": 39695,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £6,450 vs typical £2,695 for a 2013 Vauxhall ZAFIRA (13 listings), 239% of typical",
+    "listing": {
+      "id": 39695,
+      "make": "Vauxhall",
+      "model": "ZAFIRA",
+      "year": 2013,
+      "price": 6450,
+      "mileage": 67528,
+      "location": "Derby, Derbyshire",
+      "description": "****For more details, including 'walk around videos' of our vehicles visit our website KC KARS UK*******MPV - 1.4 TURBO PETROL ENGINE – SMOOTH AND RESPONSIVE - AUTOMATIC TRANSMISSION - SRI SPECIFICATION – SPORTY STYLING - 7-SEAT CONFIGURATION – FLEXIBLE FAMILY SPACE - LOW MILEAGE - FULL SERVICE HISTORY (10 SERVICES) - AIR CONDITIONING / CLIMATE CONTROL - TOUCHSCREEN INFOTAINMENT SYSTEM - BLUETOOTH HANDS-FREE & AUDIO STREAMING - DAB DIGITAL RADIO - CRUISE CONTROL & SPEED LIMITER - FRONT & REAR PARKING SENSORS - ALLOY WHEELS - ELECTRIC WINDOWS & MIRRORS - ISOFIX CHILD SEAT MOUNTS - SPLIT-FOLDING REAR SEATS - COMPETITIVE PRICE - GOOD CONDITION - ULEZ COMPLIANT – AUTOMATIC – MOT UNTIL SEPTEMBER 2026 – FULL SERVICE HISTORY WITH 10 SERVICES – INCLUDES UP-TO-DATE - OIL & FILTER CHANGE SERVICE – LOW MILEAGE – GOOD INSURANCE GROUP – ROAD TAX JUST £265 PER YEAR – 2 KEYS – ONLY ONE PREVIOUS REGISTERED KEEPER – 3-MONTH 'BACK TO BASE' WARRANTY – FINANCE OPTIONS AVAILABLE! WE WORK WITH FINANCE COMPANIES TO ASSIST CUSTOMERS WITH CREDIT SCORES FROM EXCELLENT TO POOR, OFFERING COMPETITIVE RATES – NATIONWIDE DELIVERY AVAILABLE - CONTACT US FOR A DELIVERY QUOTE***Introducing the Vauxhall Zafira Tourer, a sleek and stylish family car that ticks all the boxes. With only 67528 miles on the clock and a full service history boasting 10 services, this vehicle is in top-notch condition.-Vauxhall Zafira Tourer 1.4 SRi T Automatic 5dr – SB63 EJKEngine: 1.4 Turbo Petrol Transmission: AutomaticDoors: 5 Seating: 7Low Miles • Full Service History (10 Services) • 7-Seat AutomaticThis Vauxhall Zafira Tourer SRi Automatic is a spacious and versatile 7-seat family MPV, perfect for those needing practicality, comfort, and reliability. Powered by the 1.4 turbo petrol engine and paired with a smooth automatic gearbox, it delivers an easy and comfortable drive for both town and motorway journeys. With low mileage and an excellent full service history consisting of 10 services, this vehicle has clearly been very well maintained, giving real peace of mind to the next owner.This Zafira Tourer SRi T Auto 5dr is the perfect blend of performance and practicality, making it ideal for busy families on the go. Finished in a sophisticated Silver colour, it exudes class and sophistication on the road.You can rest assured that this Zafira Tourer has been well looked after and is ready for its next adventure. Don't miss out on this fantastic opportunity to own a reliable and well-maintained vehicle. Upgrade your family's driving experience with the Vauxhall Zafira Tourer today. A well-maintained, low-mileage 7-seat automatic, ideal for families needing comfort, space, and dependability.For more details, including 'walk around videos' of our vehicles visit our website KC KARS UK.\n\nAir Conditioning; Alloy Wheels; Climate Control; Cruise Control; Electric Windows; Electronic Stability Program (ESP); Full Service History; Parking Sensors; AM/FM Stereo; Safety Belt Pretensioners; Tuning\n\nOpening Hours:\nMo: 09:30 AM to 05:00 PM\nTu: 09:30 AM to 05:00 PM\nWe: 09:30 AM to 05:00 PM\nTh: 09:30 AM to 05:00 PM\nFr: 09:30 AM to 05:00 PM\nSa: 09:30 AM to 05:00 PM\nSu: 11:00 AM to 04:00 PM\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/9eafa4f7815d4ca69e_fcc724eca2c7/86"
+      ],
+      "url": "https://www.gumtree.com/p/vauxhall/2013-vauxhall-zafira-tourer-1.4-zafira-tourer-sri-t-auto-5dr-7-seats-low-miles-10-services-p.../1509615366"
+    }
+  },
+  {
+    "id": 39495,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £6,950 vs typical £2,995 for a 2015 Vauxhall INSIGNIA (14 listings), 232% of typical",
+    "listing": {
+      "id": 39495,
+      "make": "Vauxhall",
+      "model": "INSIGNIA",
+      "year": 2015,
+      "price": 6950,
+      "mileage": 66000,
+      "location": "Newcastle, Tyne and Wear",
+      "description": "☆FREE DELIVERY SERVICE AVAILABLE ON ALL OUR VEHICLES FOR SALE WITHIN 100 MILES OF OUR SHOWROOM.\n\nWHITE, AUTOMATIC, TWO OWNERS, SAME LAST OWNER KEPT SINCE 22.06.2018, FULL VAUXHALL MAIN DEALER SERVICE HISTORY INCLUDING TIMING BELT CHANGE, ALL THE OLD MOTS HERE, 2 X KEYS, GREAT SPEC, SAT NAV, FULL LEATHER INTERIOR, HEATED SEATS, CRUISE CONTROL, PARKING SENSORS, CLIMATE CONTROL, XENON LIGHTS, BLUETOOTH TELEPHONE & AUDIO CONNECTION, ALLOYS, ELECTRIC MIRRORS, AUTO LIGHTS, NICE EXAMPLE....... (Will come with Fresh 12 MONTHS MOT at the point of sale)... (Nationwide Delivery Available + Part Exchange Welcome + Finance Available + Comprehensive Extendable Warranties Available).... Fully Hpi Clear, AA/Rac Inspections Welcome, DRIVES GREAT, EXCELLENT CONDITION INSIDE & OUT\n\n☆FREE DELIVERY SERVICE AVAILABLE ON ALL OUR VEHICLES FOR SALE WITHIN 100 MILES OF OUR SHOWROOM. ☆FULL WALK-AROUND VIDEO AVAILABLE ON REQUEST. ☆COMPREHENSIVE WARRANTY PACKAGES AVAILABLE FROM 6, 12, 24 & 36 MONTHS- ASK FOR MORE DETAILS.\n\nCentral Locking; Rear seat belts; Side Airbags; Tilt Steering Wheel; Electronic Stability Program (ESP); Bluetooth Telephone; Passenger Airbag; CD Player; Air Conditioning; Parking Sensors; Electric heated seats; Xenon headlights; Anti-Lock Brakes (ABS); Electric Windows; Leather Seats; Driver Airbag; Cruise Control; Climate Control; Navigation System; Power-assisted Steering (PAS); Bluetooth Audio Streaming; Alloy Wheels\n\nCALL TO ARRANGE A CONVENIENT TIME FOR VIEWING!\nVIEWING BY APPOINTMENT ONLY (AVAILABLE 7 DAYS A WEEK!)\nTel: [07444-014800]\n\n\nAbout Us:\nUsed car specialist, based in Heaton, Newcastle Upon Tyne.\n\nWelcome to Bluemotion Automotive Group, We specialise in providing an excellent personal service and the very best second hand car deals around. We are a Small business with years of dedicated experience, we pride ourselves in sourcing quality used cars and selling them for very competitive low prices. Please Feel Free to Contact Us on [07444-014800] or Email us regarding any car available for sale and we will be glad to help. VIEWING BY APPOINTMENT ONLY!\n\nOur services include Used Vehicle Sales.\n\nLocal Metro Station is only a 5 minute walk away. In addition, Newcastle Central Train Station is less than 2 miles away, from where we are more than willing to come and collect you.\n\nWe Aim to keep our prices as competitive and low as possible by keeping overheads to a minimum, in this way we can pass the savings on to you the customer.\n\n\nWarranty:\nThere is the option to purchase a comprehensive Autogaurd warranty product for that added peace of mind. All warranty products are subject to terms & conditions.\n\nExtendable warranty packages are available at additional cost.\n\nMechanical and Electrical Cover options are available from 6, 12, 24 & 36 Months.\n\nPlease call or email our sales team for a detailed overview of all products and services available.\n\nWhy buy from us?\n* ✅ All Vehicles Hpi Checked, Vehicles Come With Fresh 12 Months Mot before sold.\n* ✅ Nationwide Delivery Available (please contact us for a quote)\n* ✅ Part Exchange Welcome - Top prices paid on quality p/x vehicles!\n* ✅ Comprehensive Extendable Warranties Available (T&C'S Apply)\n* ✅ We Can Also Arrange Late Evening Viewings To Suit Your Needs By Appointment Only!\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/fcf2744621f34bd6a1_6581361074f7/86"
+      ],
+      "url": "https://www.gumtree.com/p/vauxhall/-2015-15-vauxhall-insignia-2.0-cdti-163-elite-nav-auto-low-mileage-automatic-/1505389539"
+    }
+  },
+  {
+    "id": 39603,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £4,499 vs typical £2,495 for a 2013 Vauxhall CORSA (34 listings), 180% of typical",
+    "listing": {
+      "id": 39603,
+      "make": "Vauxhall",
+      "model": "CORSA",
+      "year": 2013,
+      "price": 4499,
+      "mileage": 73626,
+      "location": "Norwich, Norfolk",
+      "description": "This 2013 Vauxhall Corsa CDTi Limited Edition presents a superb blend of style and efficiency, boasting a frugal 1.3 litre diesel engine. As a Limited Edition model, it offers a distinctive look and feel, making it stand out from the crowd. This particular example has been well maintained, ensuring its readiness for many more miles of reliable service.The Corsa CDTi Limited Edition is designed to provide an enjoyable driving experience. Its compact size makes it ideal for navigating city streets, while the diesel engine ensures excellent fuel economy. This model is equipped with features that enhance both comfort and convenience, reflecting its status as a desirable choice within the supermini segment.\n\nSafety Belt Pretensioners\n\nOpening Hours:\nMo: 08:30 AM to 05:00 PM\nTu: 08:30 AM to 05:00 PM\nWe: 08:30 AM to 05:00 PM\nTh: 08:30 AM to 05:00 PM\nFr: 08:30 AM to 05:00 PM\nSa: 09:00 AM to 05:00 PM\nSu: 10:00 AM to 04:00 PM\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/0fa942bf2f1b4b8c83_42910e4aabca/86"
+      ],
+      "url": "https://www.gumtree.com/p/vauxhall/2013-vauxhall-corsa-1.3-cdti-ecoflex-limited-edition-3dr-hatchback-diesel-manual/1511656299"
+    }
+  },
+  {
+    "id": 39712,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £4,995 vs typical £2,645 for a 2012 Citroen DS3 (8 listings), 189% of typical",
+    "listing": {
+      "id": 39712,
+      "make": "Citroen",
+      "model": "DS3",
+      "year": 2012,
+      "price": 4995,
+      "mileage": 86810,
+      "location": "Nuneaton, Warwickshire",
+      "description": "Hello and welcome to Noah's Automotive!\n\nWant to speak to a real person and get things moving without scrolling?\n- Give us a call on the number on this website, whether you've got questions, want to reserve, or book an appointment - we're just a message or call away.\n- Search \"\"Noah's Automotive\"\" on Google for our website and extensive stock range.\n- We offer a wide range of finance options tailored to suit ALL needs. Enquire about finance today and get a decision within an hour.\n- ALL Part Exchanges welcome and extended warranty options available.\n\nLocation: Noah's Automotive Ltd, Whittleford Service Station, Nuneaton, CV10 9JD.\n- Viewings available 7 days a week, including evenings by appointment.\n- Same-day drive-away possible with nationwide delivery in 24-72 hours.\n- Part exchanges welcome, fast, fair valuations offered.\n\n____________________________________________________________\n\nIntroducing our superb 2012 Citroen DS3 DStyle 1.6 Petrol Automatic 3 Door Hatchback finished in yellow - 2 previous owners, low mileage, serviced February 2026, superb value, ULEZ and CAZ compliant.\n\nVehicle Overview:\nThe Citroen DS3 DStyle stands out with its unique styling, comfortable interior and responsive 1.6 petrol automatic powertrain. It provides fun driving dynamics, practical hatchback usability and premium DStyle features - perfect for those wanting a stylish, low-mileage car with excellent value.\n\n____________________________________________________________\n\nVehicle Details:\n- Make & Model: Citroen DS3 DStyle\n- Body Style: 3 Door Hatchback\n- Engine Size: 1598cc\n- Fuel Type: Petrol\n- Gearbox: Automatic / Tiptronic\n\nKey Facts:\n- 2 previous owners\n- Low mileage\n- Serviced February 2026\n- Superb value\n- ULEZ and CAZ compliant\n- This vehicle will come with a fresh 12-month MOT ready for the new owner\n\n____________________________________________________________\n\nThe DStyle specification includes:\n- 16\"\" Alloy Wheels\n- Rear Parking Sensors\n- Rear Privacy Glass\n- Front Fog Lights\n- Air Conditioning\n- Digital Climate Control\n- Cruise Control\n- Full Black Leather Interior\n- Height Adjustable Front Seats\n- ISOFIX Anchor Points\n- Citroen CD AM FM Stereo System\n- Auxiliary Audio Input\n- Automatic Lights\n- Automatic Wipers\n- Auto Tinting Rear View Mirror\n- Front Electric Windows\n- Electric Powerfold Door Mirrors\n- Leather Arm Rest\n- Cup Holders\n- Adjustable Steering Column\n- Multifunctional Steering Wheel\n- Sport Vehicle Dynamic Modes\n- Automatic / Tiptronic Gearbox\nAnd much more…\n\nCONDITION\n- All of our vehicles are presented in great condition, considering their age and mileage\n- Professionally valeted inside and out, ready for immediate viewing and test drive\n- HPI clear with no outstanding finance or adverse history\n\n____________________________________________________________\n\nTHE NOAH'S AUTOMOTIVE DIFFERENCE\nWe don't just sell cars, we deliver confidence, clarity, and exceptional value.\nWe are proud to be an AA Approved Dealer, meaning our vehicles meet the AA's strict standards and our business operates with full transparency and trust.\n\nWhat We Offer:\n- All vehicles are HPI clear - guaranteed\n- Prices checked daily against the UK market for competitiveness\n- Ready-to-drive away vehicles - no hidden work required\n- Part exchanges welcomed - competitive, transparent offers\n- Nationwide delivery available, typically within 24-72 hours\n- Extended warranty options available - enquire for details\n- Walkaround videos, additional photos and live viewings on request\n\n____________________________________________________________\n\nHOW TO RESERVE OR ENQUIRE\n- Our vehicles are in very high demand - early enquiry is strongly advised\n- Call or message us for quick, no-obligation information\n- A small refundable reservation deposit can secure the vehicle until viewing or delivery\n- HD photos, detailed walkaround videos or live video calls available - just ask\n\n____________________________________________________________\n\nCONTACT US\nTo arrange a viewing, reserve this vehicle, or request more info:\nNoah's Automotive Ltd, CV10 9JD, Open 7 days a week (evenings included)\nThank you for your time - we look forward to hearing from you and assisting with your next vehicle purchase.\n\nAir Conditioning; Alloy Wheels; Climate Control; Cruise Control; Electric Windows; Electronic Stability Program (ESP); Parking Sensors; Safety Belt Pretensioners; Tuning\n\nAbout us:\nWelcome to Noah's Automotive\n\nAt Noahs Automotive we make buying a car simple, with great value cars at a very competitive price point.\nWe have a wide range of makes and models to choose from, You’re sure to find one within your budget, whatever you need, we’re here to help with our excellent customer care before and after you buy, we’ll make sure you drive away happy.\n\nSo What are you waiting for? Take a look at our cars or find out more about us below.\n\nOpening Hours:\nMo: 10:00 AM to 08:00 PM\nTu: 10:00 AM to 08:00 PM\nWe: 10:00 AM to 08:00 PM\nTh: 10:00 AM to 08:00 PM\nFr: 10:00 AM to 08:00 PM\nSa: 09:30 AM to 08:00 PM\nSu: 10:00 AM to 06:00 PM\n\nWhy buy from us?\n* Competitive Pricing\n* A great range of makes and models\n* Exceptional customer expereince\n* Great Part exchange pricing\n* Be able to drive away in under an hour\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/458ba8901a164073a8_ea949b764aa4/86"
+      ],
+      "url": "https://www.gumtree.com/p/citroen/2012-citroen-ds3-dstyle-1.6-petrol-automatic-3-door-hatchback-2-previous-owners/1512043290"
+    }
+  },
+  {
+    "id": 40820,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £5,995 vs typical £3,495 for a 2012 Volkswagen POLO (13 listings), 172% of typical",
+    "listing": {
+      "id": 40820,
+      "make": "Volkswagen",
+      "model": "POLO",
+      "year": 2012,
+      "price": 5995,
+      "mileage": 93000,
+      "location": "Ferndown, Dorset",
+      "description": "Your chance to purchase this lovely little Volkswagen Polo 1.4 Automatic 5 door with amazing spec from our Ferndown branch from as little as £134.22 a month with £1000 deposit . View a walk round video and Apply today at [Website URL removed] to secure this vehicle today . Clean and bright both inside and out this one drives without fault and comes with good service history and a full book pack and both its original keys . We will supply it to you serviced and with a warranty for your peace of mind . Being the Match edition it comes with loads of spec including Apple car play , Phone Prep and Air Conditioning . So if your in the market for a nice V.W. Polo Automatic call the office today to arrange a viewing and test drive . Other specifications include .Power Assisted Steering , Air Conditioning , ABS , ESP , Multiple Airbags , Electric Windows And Mirrors , Apple Car Play , With DAB Radio And Phone Prep , Alloy Wheels , Height Adjustable Seats , Front And Rear Head Restraints , Isofix Seats , Child Locks , ETC .Full Dealer Facilities Available , Part Exchange A Pleasure , All Cars HPI Checked , This Car Is At Our Ferndown Branch , Call 01202 893985 Today To Arrange A Viewing And Test Drive .\n\nAnti-Lock Brakes (ABS); Air Conditioning; Alloy Wheels; Electric Adjustable Seats; Electric Windows; Electronic Stability Program (ESP); Power-assisted Steering (PAS); AM/FM Stereo; Safety Belt Pretensioners\n\nAbout us:\nWe strive to deliver that hard to come by 'Old Fashioned' courteous and friendly service that you can only get from a small business. We supply mostly the Local Community with low mileage quality used vehicles, specialising in small to medium hatchbacks.\n\nWe pride ourselves on or good reputation, and aim to keep it. To that end, the majority of our cars are sourced from Main Dealers, are fully HPi checked and are usually supplied with new MOT's/service and we offer a comprehensive warranties.\n\nPart exchange and Full Dealer facilities are available. Our stock changes daily, so don't hessitate to contact us if you don't see the vehicle you want, and our experienced Sales team will be pleased to help without any obligation on your part.\n\nAs well as car sales, we have Full Worksop facilities through our extensively experienced mechanical team, undertaking all mechanical work also undertaken to an excellent standard, all at very reasonable rates\n\nWarranty:\nup to Standard 12 Months Warranty included , all cars are usually supplied with new or long Mot's and will come fully serviced. We can also supply you with an comprehensive extended warranties as required.\n\n\nTerms and Conditions:\nLow rate finance available from as little as £99 deposit.\n\nIf you have had or are having credit problems like county court judgements, bankruptcy, arrears or the like don't despair, we could still help.\n\nWe deal with a huge number of companies who specialise in providing credit to people with problems.\n\n\nWhy buy from us?\n* Large selection of vehicles spread over 2 sites in Dorset .\n* Full range of finance packages available even if youve had problems in the past .\n* Comprehesive warranties Included on most vehicles .\n* Part exchanges welcome .\n* All debt and credit cards accepted .\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/ef4393192fcc4650ab_7053ad50c8e4/86"
+      ],
+      "url": "https://www.gumtree.com/p/volkswagen/2012-volkswagen-polo-1.4-match-5dr-dsg-great-spec-small-automatic-hatchback-petrol-automatic/1512106125"
+    }
+  },
+  {
+    "id": 41487,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £3,599 vs typical £1,922 for a 2010 Honda JAZZ (8 listings), 187% of typical",
+    "listing": {
+      "id": 41487,
+      "make": "Honda",
+      "model": "JAZZ",
+      "year": 2010,
+      "price": 3599,
+      "mileage": 111442,
+      "location": "Coventry, West Midlands",
+      "description": "EL-ROI motors is pleased to present this HONDA JAZZ 1.4 i-VTEC EX 5dr i-SHIFT Auto--Comes with 1 year MOT-New Service- 3 months Warranty-\n\nSafety Belt Pretensioners\n\nAbout us:\nAt El-Roi Motors UK, we redefine the experience of buying a pre-owned car. As a family-run business, we combine integrity, expertise, and a genuine passion for helping you find a vehicle that perfectly complements your lifestyle.\n\nOur collection of meticulously selected used cars offers the finest in quality, performance, and style. Whether you're embarking on your first automotive journey, upgrading to a luxurious family vehicle, or searching for something truly extraordinary, we provide guidance tailored to your needs.\n\nWith new arrivals added regularly, our inventory is ever-evolving, offering fresh opportunities to discover your ideal car. Visit our showroom to explore our vehicles up close, enjoy a personalized test drive, and experience the craftsmanship and care that sets each car apart.\n\nAt EL-Roi Motors UK, exceptional service is at the heart of everything we do. We offer honest advice, attentive support, and a welcoming environment designed to make your car-buying experience effortless and enjoyable.\n\nJoin the many satisfied customers who trust us to deliver not just cars, but confidence, reliability, and peace of mind. Your next veh icle awaits at EL-Roi Motors UK– where quality meets excellence, and your journey begins in style.\n\nWarranty:\nAll our cars comes with at least 3 months warranty which could be extended to 6, 12, 18, 24 and 36 months\n\nTerms and Conditions:\nFound when invoiced\n\nOpening Hours:\nMo: 09:30 AM to 07:00 PM\nTu: 09:00 AM to 07:00 PM\nWe: 09:00 AM to 07:00 PM\nTh: 09:00 AM to 07:00 PM\nFr: 09:30 AM to 07:00 PM\nSa: 09:30 AM to 07:00 PM\nSu: 01:00 PM to 05:00 PM\n\nWhy buy from us?\n* Due diligence done on all cars including pre-sale service and MOT\n* Clean and fully valeted cars always\n* We offer Gold Customer Warranty to all our cars\n* Home delivery service to all parts of the United Kingdom from 24 to 48 hours, in some cases same day\n* Excellent post sales services including repairs, maintenance MOT or Service\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/0ae47f7e7bf64b0aa0_b4c39514e938/86"
+      ],
+      "url": "https://www.gumtree.com/p/honda/2010-honda-jazz-1.4-i-vtec-ex-5dr-i-shift-auto-hatchback-petrol-automatic/1512121863"
+    }
+  },
+  {
+    "id": 41010,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £3,395 vs typical £1,447 for a 2009 Vauxhall CORSA (10 listings), 235% of typical",
+    "listing": {
+      "id": 41010,
+      "make": "Vauxhall",
+      "model": "CORSA",
+      "year": 2009,
+      "price": 3395,
+      "mileage": 63630,
+      "location": "Redbridge, London",
+      "description": "Hi, I AM SELLING 2009 VAUXHALL CORSA CLUB GREY 1.4L Petrol AUTOMATIC. The Car has Full Vauxhall Service History, 1YR NEW MOT WITHOUT ADVISORY 04/27. THE CAR LOOKS, DRIVES & MECHANICALLY ABSOLUTELY PERFECT. I’VE HAD THIS CAR SINCS 2009 SO ONLY 1 OWNER FROM NEW. THE MILEAGE IS ONLY 63,000. THE LAST FULL SERVICE WAS Done in JAN 2026 INCLUDING TIMING CHAIN & WATER-PUMP, HPI CLEAR / NO CATEGORY.\n\n*FEATURES*\n\nVAUXHALL CORSA CLUB\n1.4L PETROL⛽️\nFULLY AUTOMATIC\nULEZ COMPLAINT ✅\nHPI CLEAR / NO CATEGORY\n1YR NEW MOT WITHOUT ADVISORY 04/27\nEXCELLENT CONDITION IN & OUT\nONLY 63,000 MILES\nCHEAP ROAD TAX\nENGINE & GEARBOX EXCELLENT ✅\nALLOY WHEELS 🛞\nDRIVES & LOOKS ABSOLUTELY PERFECT\nAUX, BLUETOOTH, CD PLAYER & FM RADIO 📻\nONLY 1 OWNER SINCE 2009!\nELECTRIC WINDOWS & SIDE MIRRORS\n5 DOORS🚪\nEURO STATUS 5A\n2 X CENTRAL LOCKING KEYS 🔑\nPOWER STEERING\nFAST AIR CONDITIONING\n2 AIRBAGS\nHEATER\nFULL LAST SERVICE DONE ON 01/26 INCLUDING TIMING CHAIN & WATER-PUMP\nSPARE TYRE IN BOOT\nFULL VAUXHALL SERVICE HISTORY & ALL PAPERWORK’S SINCE 2009-2026\nFULL V5C LOGBOOK\n\n*SERIOUS BUYERS ONLY….NO TIME WASTERS PLS!!*\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/8c1395c8a318428abd_58207ffa85f0/86"
+      ],
+      "url": "https://www.gumtree.com/p/vauxhall/2009-vauxhall-corsa-automatic-1.4l-petrol-63k-miles-full-service-history-1yr-new-mot-only-1-owner/1512110048"
+    }
+  },
+  {
+    "id": 39546,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £5,495 vs typical £2,495 for a 2011 BMW 1 SERIES (13 listings), 220% of typical",
+    "listing": {
+      "id": 39546,
+      "make": "BMW",
+      "model": "1 SERIES",
+      "year": 2011,
+      "price": 5495,
+      "mileage": 67568,
+      "location": "Stoke-on-Trent, Staffordshire",
+      "description": "Great Looking BMW 1 Series 2.0 11d 3dr 2011 (FINANCE AVAILABLE) + HPI Clear + Vosa Verified Mileage + looked after very well from previous Owner + 2 Keys + Long Mot + (WILL COME WITH FRESH SERVICE PRIOR TO SALE) + AUTOMATIC + Running costs very low + Exterior and Interior very clean + Electric Windows + Electric Mirrors + Half Leather Seats + Convertible + Alloy Wheels + Low mileage for age + 3 MONTHS WARRANTY + EXTENDED WARRANTY AVAILABLE. We offer a click and collect service for collection and delivery. Can deliver Nationwide at an extra cost. Viewings available 7 days a week by appointment. Please call us for enquiries at THE MOTOR DEALS… 07913953992.\n\nAlloy Wheels; Electric Windows; Leather Seats; Safety Belt Pretensioners\n\nAbout us:\nWelcome to The Motor Deals Limited\nQuality Used Cars In Stoke On Trent, Staffordshire\nA family run business focused on providing you with the perfect car for your needs, with excellent customer service! Here at TMD, we work our absolute hardest to secure you an impeccable car at a competitive price based on your individual needs and circumstances too.\n\nSELL YOUR CAR\nWe also offer competitive part exchange and sell your car rates. Simply fill in our online form and a member of our team will get back to you with a quick free valuation.\n\nOpening Hours:\nMo: 10:00 AM to 05:30 PM\nTu: 10:30 AM to 05:30 PM\nWe: 10:00 AM to 05:30 PM\nTh: 10:00 AM to 05:30 PM\nFr: 10:00 AM to 05:30 PM\nSa: 10:00 AM to 05:30 PM\nSu: Closed\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/a5612100e2514195ba_9cb9bc5fcee8/86"
+      ],
+      "url": "https://www.gumtree.com/p/bmw/2011-bmw-1-series-2.0-118d-m-sport-steptronic-euro-5-2dr-convertible-diesel-automatic/1511464210"
+    }
+  },
+  {
+    "id": 41438,
+    "label": "bad",
+    "expectedTriagePass": true,
+    "expectedCategories": [
+      "GENUINE_SALE"
+    ],
+    "note": "Overpriced: £6,650 vs typical £3,795 for a 2012 Volkswagen GOLF (13 listings), 175% of typical",
+    "listing": {
+      "id": 41438,
+      "make": "Volkswagen",
+      "model": "GOLF",
+      "year": 2012,
+      "price": 6650,
+      "mileage": 61867,
+      "location": "Nazeing, Essex",
+      "description": "2012 Volkswagen Golf 1.4 TSI AutoPetrol | 61,867 miles | AutomaticWhy you will love itA practical, comfortable hatchback with smooth automatic performance and a great everyday spec. This Golf offers the perfect mix of efficiency and punch from its 1.4 TSI engine ideal for commuting, school runs or motorway cruising.The essentials Year: 2012 Fuel: Petrol Gearbox: Automatic Mileage: 61,867 miles Previous owners: 4 Last serviced: 28/02/2026 MOT until: 23/12/2026Features Parking sensors Cruise control Bluetooth connectivity Air conditioning Alloy wheels Privacy glass Daytime running lightsCondition & peace of mindRecently serviced and with a long MOT, this Golf is ready for its next owner. A solid all-rounder known for comfort, reliability and strong build quality.Enquire today to arrange a viewing or test drive.\n\nAir Conditioning; Alloy Wheels; Cruise Control; Parking Sensors; Safety Belt Pretensioners\n\n",
+      "imageUrls": [
+        "https://img.gumtree.com/ePR8PyKf84wPHx7_RYmEag/f3517ca14e0f4725a7_526e59a07ccc/86"
+      ],
+      "url": "https://www.gumtree.com/p/volkswagen/2012-volkswagen-golf-1.4-tsi-match-5dr-dsg-hatchback-petrol-automatic/1510708206"
+    }
+  }
+]
