@@ -15,7 +15,7 @@ Read the advert and pick exactly one category:
 - SPARES_OR_REPAIRS: the car is for sale but is a non-runner, has a major fault (engine, gearbox, head gasket), no MOT because of failures, or is "sold as seen" for repair.
 - BREAKING_FOR_PARTS: the seller is breaking the car or selling parts from it, not selling the whole car.
 - WANTED_AD: someone wants to buy a car rather than sell one.
-- WRITE_OFF: the car is an insurance write-off (Cat S, Cat N, Cat C, Cat D) or has been in a serious accident.
+- WRITE_OFF: the car is, or has been, an insurance write-off (any category: Cat A, B, C, D, S or N), repaired or not, or has been in a serious accident. Use this even if the write-off is only mentioned in passing, e.g. "category N very light damage" or "previously Cat S".
 - SCAM_SUSPECTED: signs of a scam, e.g. price far below market value, seller abroad, car must be shipped, deposit up front, contact only by email or WhatsApp, or a copied description that doesn't match the car.
 - NOT_A_CAR: the advert isn't a car, e.g. a part, wheels, number plate, motorbike, van conversion kit or accessory.
 
@@ -83,4 +83,4 @@ export async function triageListing({ description, price, makeModel, mileage }) 
     ])
 }
 
-export const passesTriage = (result) => result.category === PASS_CATEGORY && result.confidence > minConfidence
+export const passesTriage = (result) => result.category === PASS_CATEGORY && result.confidence >= minConfidence

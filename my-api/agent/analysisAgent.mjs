@@ -35,7 +35,8 @@ ${mot.enabled ? '   - If there\'s still no registration, skip the MOT check. The
         steps.push(`Call get_mot_history with the registration, then check the result:
    - "No MOT record found": the plate may be misread. If you have a different candidate (from the description, or a likely misreading such as 0/O, 1/I, 5/S, 8/B), try ONE more lookup. Otherwise the car is unverified.
    - Make or model doesn't match the listing: the plate belongs to a different car. Don't use that MOT history. Try your other candidate if you have one, otherwise the car is unverified. Add a red flag.
-${photos.enabled ? '   - MOT colour doesn\'t match the colour in the photos: add a red flag (possible respray, wrong plate or cloned plate) and lower your confidence by one level.\n' : ''}   - "Could not get MOT history" (service error): the MOT can't be checked. The car is unverified, but this is not the seller's fault, so don't add a red flag for it.
+${photos.enabled ? '   - MOT colour doesn\'t match the colour in the photos: add a red flag (possible respray, wrong plate or cloned plate) and lower your confidence by one level.\n' : ''}   - Compare the advertised mileage with the latest MOT reading. Up to ${mot.listingMileageToleranceMiles.toLocaleString('en-GB')} miles below it is normal (sellers round down or reuse an old figure), so don't add a red flag or lower the score for it. More than that below the latest MOT reading: add a red flag asking the seller to explain.
+   - "Could not get MOT history" (service error): the MOT can't be checked. The car is unverified, but this is not the seller's fault, so don't add a red flag for it.
    Never make more than 2 MOT lookups.`)
     } else {
         steps.push('MOT checking is switched off. Every car is unverified. This is not the seller\'s fault, so don\'t add a red flag for it, and skip the MOT rules in the rubric.')
@@ -79,7 +80,8 @@ Price against typical value (${marketValue.enabled ? 'median from get_market_val
 - 20% or more above: -2
 ${mot.enabled ? `
 MOT history (only if the car was verified):
-- Mileage rollback detected: -3
+- Mileage rollback detected: -3. Only when get_mot_history says MILEAGE ROLLBACK DETECTED. A gap between the advertised
+  mileage and the MOT readings is never a rollback, however big. Handle it with the advertised mileage check in the steps.
 - Serious corrosion: -2. Judge this from the advisory wording, not from how many there are:
   - serious: "excessively corroded", corrosion on a structural area (sills, subframe, chassis, suspension mountings) or on brake pipes,
     or the same corrosion getting worse from test to test (e.g. "slightly corroded" one year, "corroded" or "excessively corroded" later)

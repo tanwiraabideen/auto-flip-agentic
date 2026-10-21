@@ -1,9 +1,5 @@
 // client for DVSA API, no langchain here
 
-// REQUIRES FOLLOWING .env VARs (waiting approval from DVSA)
-//   MOT_CLIENT_ID, MOT_CLIENT_SECRET, MOT_API_KEY
-//   MOT_TOKEN_URL 
-
 const API_URL = 'https://history.mot.api.gov.uk/v1/trade/vehicles/registration'
 const SCOPE = 'https://tapi.dvsa.gov.uk/.default'
 

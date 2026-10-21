@@ -1,4 +1,4 @@
-// runs evaluation pipeline on labelled dataset of 30 cars
+// runs evaluation pipeline on labelled dataset of 90 cars
 
 // LangSmith trace for each listing
 

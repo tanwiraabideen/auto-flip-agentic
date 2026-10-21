@@ -37,6 +37,7 @@ enum AnalysisStatus {
   ANALYSING
   DONE
   FAILED
+  IMPORTED // old listings loaded from data/Cars.csv. Only used as market value comparables, never analysed
 }
 
 enum TriageCategory {

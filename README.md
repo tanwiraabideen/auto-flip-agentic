@@ -13,7 +13,7 @@ Gumtree ──► 1. Scrape ──► 2. Rule filter ──► 3. LLM triage ─
 
 1. **Scrape** (`webScraping.js`): Puppeteer works through the newest Gumtree car search pages and pulls the price, mileage, year, location, description and photos from each listing. Make and model come from the breadcrumbs, matched against `gumtree-car-data.json`. Listings are saved through the API with status `PENDING`. URLs already in the database are skipped.
 2. **Rule filter** (`ruleFilter.js`): plain checks that cost nothing. A listing is rejected (`REJECTED_RULES`) if it has no photos, is priced under £50, or its description says "breaking", "for parts" or "wanted".
-3. **Triage** (`my-api/agent/triage.mjs`): a cheap model (`gpt-5-nano` by default) puts the ad into one category: `GENUINE_SALE`, `SPARES_OR_REPAIRS`, `BREAKING_FOR_PARTS`, `WANTED_AD`, `WRITE_OFF`, `SCAM_SUSPECTED` or `NOT_A_CAR`. Only a `GENUINE_SALE` with confidence above 0.7 moves on. Everything else is marked `REJECTED_TRIAGE`.
+3. **Triage** (`my-api/agent/triage.mjs`): a cheap model (`gpt-5-nano` by default) puts the ad into one category: `GENUINE_SALE`, `SPARES_OR_REPAIRS`, `BREAKING_FOR_PARTS`, `WANTED_AD`, `WRITE_OFF`, `SCAM_SUSPECTED` or `NOT_A_CAR`. Only a `GENUINE_SALE` with confidence of 0.6 or more moves on, so write-offs of any category are rejected. Everything else is marked `REJECTED_TRIAGE`.
 4. **Analysis agent** (`my-api/agent/analysisAgent.mjs`): a LangChain agent (`gpt-5` by default) that decides for itself which tools to call and in what order:
    - `analyse_photos`: a vision model reads the number plate and body colour, and looks for major damage.
    - `get_mot_history`: looks up the official DVSA MOT history by registration. It checks for mileage rollback, failed tests and recurring advisories, and whether the make, model and colour match the listing.
@@ -22,7 +22,7 @@ Gumtree ──► 1. Scrape ──► 2. Rule filter ──► 3. LLM triage ─
    The agent scores the car out of 10 using a fixed rubric (price against market value, MOT history, damage) and returns a recommendation (`BUY` / `MAYBE` / `AVOID`), a confidence level, a summary, red flags and positives. A car that can't be checked against an MOT record is "unverified" and can't score above 6.
 5. **Filter matching** (`filterMatch.js`): `BUY` and `MAYBE` cars are checked against every user's saved filter (make, model, price, year and mileage ranges). Each match is recorded in `FilterListing`.
 
-Each listing's `analysisStatus` tracks where it got to: `PENDING → ANALYSING → DONE`, or `REJECTED_RULES`, `REJECTED_TRIAGE` or `FAILED`. Cars left in `ANALYSING` by a crashed run go back to `PENDING` on the next run.
+Each listing's `analysisStatus` tracks where it got to: `PENDING → ANALYSING → DONE`, or `REJECTED_RULES`, `REJECTED_TRIAGE` or `FAILED`. Cars left in `ANALYSING` by a crashed run go back to `PENDING` on the next run. Old listings loaded from `my-api/data/Cars.csv` are `IMPORTED`: they only serve as market value comparables and are never analysed.
 
 ## Project structure
 
@@ -46,9 +46,10 @@ Each listing's `analysisStatus` tracks where it got to: `PENDING → ANALYSING �
     │   └── tools/          # photo, MOT (DVSA client + tool) and market value tools
     ├── scripts/
     │   ├── applyRuleFilter.mjs   # apply the rule filter to cars already in the db
-    │   └── runAnalysis.mjs       # run the agent on chosen cars and print the result
+    │   ├── runAnalysis.mjs       # run the agent on chosen cars and print the result
+    │   └── importCsv.mjs         # load data/Cars.csv as market value comparables
     └── eval/
-        ├── dataset.json    # 30 labelled listings (10 junk, 10 good, 10 bad)
+        ├── dataset.json    # 90 labelled listings (30 junk, 30 good, 30 bad)
         └── runEval.mjs     # measures triage accuracy and score separation
 ```
 
@@ -133,6 +134,8 @@ node scripts/runAnalysis.mjs --id 12      # run the agent on one car and print t
 node scripts/runAnalysis.mjs --limit 3    # the next 3 cars that passed triage
 node scripts/applyRuleFilter.mjs          # dry run of the rule filter on pending cars
 node scripts/applyRuleFilter.mjs --apply  # actually mark failing cars REJECTED_RULES
+node scripts/importCsv.mjs                # dry run of loading data/Cars.csv
+node scripts/importCsv.mjs --apply        # load it (as IMPORTED, skipping ids already in the db)
 ```
 
 ## API
@@ -157,7 +160,7 @@ node scripts/applyRuleFilter.mjs --apply  # actually mark failing cars REJECTED_
 
 ## Evaluation
 
-`my-api/eval/dataset.json` holds 30 hand-labelled listings: 10 **junk** (should be rejected), 10 **good** deals and 10 **bad** (overpriced or problem) cars. The eval runs the rules, triage and agent on each one and reports:
+`my-api/eval/dataset.json` holds 90 hand-labelled listings: 30 **junk** (should be rejected: spares or repairs, write-offs, breakers, wanted ads), 30 **good** deals and 30 **bad** (overpriced) cars. Good and bad are judged against the median price of the same make and model, both for the exact year and a year either side. The eval runs the rules, triage and agent on each one and reports:
 
 - triage accuracy: junk rejected, genuine sales let through
 - how much junk the rule filter and triage catch together

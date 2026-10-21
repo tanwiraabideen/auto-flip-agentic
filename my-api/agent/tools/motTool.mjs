@@ -3,6 +3,9 @@
 import { tool } from '@langchain/core/tools'
 import { MotHistoryInput } from '../schemas.mjs'
 import { getMotHistory, normaliseRegistration } from './motClient.mjs'
+import { config } from '../config.mjs'
+
+const { rollbackToleranceMiles } = config.tools.mot
 
 // regex to group advisories  (maybe remove because we want model to do judgment)
 const ADVISORY_GROUPS = {
@@ -42,13 +45,20 @@ export function summariseMotHistory(vehicle) {
 
     lines.push(`Mileage readings: ${readings.map(r => `${formatDate(r.date)} ${r.miles.toLocaleString('en-GB')}${r.unit}`).join(', ') || 'none'}`)
 
+    // small drops are typos or retests, so they're reported but not called a rollback
     const rollbacks = []
+    const smallDrops = []
     for (let i = 1; i < readings.length; i++) {
-        if (readings[i].miles < readings[i - 1].miles) {
-            rollbacks.push(`${readings[i - 1].miles.toLocaleString('en-GB')} -> ${readings[i].miles.toLocaleString('en-GB')} on ${formatDate(readings[i].date)}`)
-        }
+        const drop = readings[i - 1].miles - readings[i].miles
+        if (drop <= 0) continue
+        const text = `${readings[i - 1].miles.toLocaleString('en-GB')} -> ${readings[i].miles.toLocaleString('en-GB')} on ${formatDate(readings[i].date)}`
+        if (drop > rollbackToleranceMiles) rollbacks.push(text)
+        else smallDrops.push(text)
     }
-    lines.push(rollbacks.length ? `MILEAGE ROLLBACK DETECTED: ${rollbacks.join('; ')}` : 'Mileage rollback: none, readings always go up')
+    lines.push(rollbacks.length ? `MILEAGE ROLLBACK DETECTED: ${rollbacks.join('; ')}` : 'Mileage rollback: none')
+    if (smallDrops.length) {
+        lines.push(`Small mileage drops of ${rollbackToleranceMiles} miles or less, most likely a recording error or retest, not a rollback: ${smallDrops.join('; ')}`)
+    }
 
     // fails
     const failCount = tests.filter(test => test.testResult === 'FAILED').length
